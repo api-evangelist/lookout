@@ -1,8 +1,13 @@
 aid: lookout
 name: Lookout
-description: Lookout is a company surfaced as a portfolio company of a16z, accel, index-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Lookout is an endpoint-to-cloud cybersecurity company focused on mobile
+  threat defense and data protection. Its Mobile Endpoint Security (MES) platform detects
+  and responds to mobile-specific threats — phishing, smishing, malicious apps, network
+  attacks, and device compromise — across enterprise and government fleets. Lookout
+  exposes RESTful Mobile Intelligence APIs (the Mobile Risk API v2, SSO Config API,
+  Connector API, and PCP Threat Feed) that stream threat events, device state, and
+  vulnerability data into SIEM, SOAR, XDR, and MDM/EMM tooling using OAuth 2.0 client
+  credentials authentication.
 url: https://raw.githubusercontent.com/api-evangelist/lookout/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,17 +17,95 @@ x-backed-by:
 - index-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Cybersecurity
+- Mobile Security
+- Endpoint Security
+- Threat Intelligence
+- Mobile Threat Defense
+- Data Protection
+- SIEM
+image: https://www.lookout.com/images/lookout-logo.svg
+apis:
+- name: Lookout Mobile Risk API v2
+  description: RESTful HTTP interface for streaming and querying mobile threat, device,
+    OS, application, and vulnerability data from a Lookout Mobile Endpoint Security
+    tenant. Uses OAuth 2.0 client-credentials authentication with an application key
+    generated in the MES Console. All endpoints are rate limited to 100 requests per
+    minute.
+  humanURL: https://doc.lookout.com/en/mobile-endpoint-security/mes-apis/mobile-risk-api-v2/mobile-risk-api-v2-overview
+  baseURL: https://api.lookout.com/
+  properties:
+  - type: Documentation
+    url: https://doc.lookout.com/en/mobile-endpoint-security/mes-apis
+  - type: APIReference
+    url: https://doc.lookout.com/en/mobile-endpoint-security/mes-apis/mobile-risk-api-v2/swagger-api-documentation
+  - type: Authentication
+    url: authentication/lookout-authentication.yml
+  - type: Conventions
+    url: conventions/lookout-conventions.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/lookout-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.lookout.com/legal/responsible-disclosure
 - type: Website
-  url: http://www.lookout.com
+  url: https://www.lookout.com
+- type: DeveloperPortal
+  url: https://doc.lookout.com/en/mobile-endpoint-security/mes-apis
+- type: Documentation
+  url: https://doc.lookout.com/en/mobile-endpoint-security/mes-apis
+- type: APIReference
+  url: https://doc.lookout.com/en/mobile-endpoint-security/mes-apis/mobile-risk-api-v2/swagger-api-documentation
+- type: Blog
+  url: https://www.lookout.com/blog
+- type: Support
+  url: https://esupport.lookout.com
+- type: TermsOfService
+  url: https://www.lookout.com/legal/terms
+- type: PrivacyPolicy
+  url: https://www.lookout.com/legal/privacy-notice
+- type: Compliance
+  url: https://www.lookout.com/legal/compliance-corner
+- type: Authentication
+  url: authentication/lookout-authentication.yml
+- type: Conventions
+  url: conventions/lookout-conventions.yml
+- type: Conformance
+  url: conformance/lookout-conformance.yml
+- type: TrustCenter
+  url: security/lookout-trust-center.yml
+- type: DomainSecurity
+  url: security/lookout-domain-security.yml
+- type: Lifecycle
+  url: lifecycle/lookout-lifecycle.yml
+- type: RateLimits
+  url: rate-limits/lookout-rate-limits.yml
+- type: LLMsTxt
+  url: llms/lookout-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 9
+  pass: local-v1
