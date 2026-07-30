@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: searched
+source: https://doc.lookout.com/en/mobile-endpoint-security/mes-apis/mobile-risk-api-v2/mobile-risk-api-v2-overview/use-the-mobile-risk-api-version-2
+docs: https://doc.lookout.com/en/mobile-endpoint-security/mes-apis
+summary:
+  types:
+  - oauth2
+  oauth2_flows:
+  - clientCredentials
+  api_key_in: []
+schemes:
+- name: OAuth2ClientCredentials
+  type: oauth2
+  flow: clientCredentials
+  description: >-
+    The Lookout Mobile Risk API v2 authenticates with the Lookout platform OAuth 2.0
+    Client Credentials Grant Flow. An administrator generates an application key in
+    the Mobile Endpoint Security (MES) Console; the application exchanges that key
+    for a short-lived bearer access token, which is then sent on each API request.
+    Tokens are scoped to a single Lookout tenant.
+  token_exchange: application key -> access token (bearer)
+  base_url: https://api.lookout.com/
+  sources:
+  - searched:doc.lookout.com
+notes:
+- The application key is issued and revoked from the MES Console by a tenant administrator.
+- All API endpoints are rate limited to 100 requests per minute per tenant.
+- No fetchable OpenAPI/Swagger definition was retrievable from this environment (the
+  doc portal host doc.lookout.com did not resolve and api.lookout.com returns the
+  console SPA shell), so this profile is documented from the published docs rather
+  than derived from a spec.

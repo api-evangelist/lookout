@@ -1,0 +1,15 @@
+generated: '2026-07-20'
+method: searched
+probe: true
+source: https://security.lookout.com/
+url: https://security.lookout.com/
+certifications:
+- SOC 2
+- FedRAMP
+- GDPR
+evidence:
+- source: https://security.lookout.com/
+  keywords:
+  - soc2
+  - fedramp
+  - gdpr

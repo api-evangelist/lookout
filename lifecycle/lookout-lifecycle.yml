@@ -1,0 +1,26 @@
+generated: '2026-07-20'
+method: searched
+source: https://doc.lookout.com/en/mobile-endpoint-security/mes-apis
+versioning:
+  scheme: uri-path
+  current: v2
+  docs: https://doc.lookout.com/en/mobile-endpoint-security/mes-apis/mobile-risk-api-v2/mobile-risk-api-v2-overview
+  detail: >-
+    The Mobile Risk API is versioned in the URI path. v2 (Mobile Risk API v2) is the
+    current generation and supersedes the original Mobile Risk API (v1), which remains
+    documented for existing integrations.
+supersession:
+- from: Mobile Risk API (v1)
+  to: Mobile Risk API v2
+  detail: v1 documented as the prior generation; new integrations use v2.
+status_page: null
+deprecation:
+  policy_url: null
+  sunset_header: null
+  detail: No formal public deprecation policy or RFC 8594 Sunset/Deprecation header
+    support was confirmed from the published docs.
+sla:
+  url: null
+  detail: No public SLA/uptime commitment page was found.
+notes:
+- status.lookout.com did not resolve during probing; no public status page pointer emitted.

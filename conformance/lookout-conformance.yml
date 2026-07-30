@@ -1,0 +1,37 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.lookout.com/legal/compliance-corner
+docs: https://www.lookout.com/legal/compliance-corner
+standards:
+- id: oauth2
+  conforms: true
+  evidence: Mobile Risk API v2 authenticates via OAuth 2.0 client-credentials grant
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: RFC 9457 application/problem+json not confirmed in published docs
+- id: soc2-type2
+  conforms: true
+  evidence: SOC 2 Type 2 for the Lookout platform (Compliance Corner)
+- id: iso-27001
+  conforms: true
+  evidence: ISO/IEC 27001 information security management (Compliance Corner)
+- id: iso-27017
+  conforms: true
+  evidence: ISO/IEC 27017 cloud security controls (Compliance Corner)
+- id: iso-27018
+  conforms: true
+  evidence: ISO/IEC 27018 cloud PII protection (Compliance Corner)
+- id: fedramp-moderate
+  conforms: true
+  evidence: FedRAMP Moderate authorization (JAB) for Mobile Endpoint Security
+- id: tx-ramp-level-2
+  conforms: true
+  evidence: Texas TX-RAMP Level 2 certification for the Lookout Security Platform
+- id: csa-star
+  conforms: true
+  evidence: CSA STAR listed on Compliance Corner
+- id: gdpr
+  conforms: true
+  evidence: GDPR program referenced on trust/security pages
+compliance_program: https://www.lookout.com/legal/compliance-corner
+trust_center: https://security.lookout.com/

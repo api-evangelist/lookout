@@ -1,0 +1,44 @@
+generated: '2026-07-20'
+method: searched
+source: https://doc.lookout.com/en/mobile-endpoint-security/mes-apis/mobile-risk-api-v2/mobile-risk-api-v2-overview/rest-conventions
+docs: https://doc.lookout.com/en/mobile-endpoint-security/mes-apis/mobile-risk-api-v2/mobile-risk-api-v2-overview
+api: Lookout Mobile Risk API v2
+conventions:
+  transport:
+    protocol: https
+    base_url: https://api.lookout.com/
+    style: REST
+    media_type: application/json
+  authentication:
+    style: oauth2-client-credentials
+    detail: OAuth 2.0 client-credentials access token (bearer); see authentication/lookout-authentication.yml
+  versioning:
+    scheme: uri-path
+    current: v2
+    detail: The Mobile Risk API is versioned in the URI path; v2 is current and supersedes v1.
+  rate_limiting:
+    documented: true
+    limit: 100 requests per minute
+    scope: all endpoints, per tenant
+    detail: See rate-limits/lookout-rate-limits.yml
+  streaming:
+    supported: true
+    detail: >-
+      The Mobile Risk API v2 exposes a streaming/events interface for continuously
+      pulling new threat events, audits, and device-state changes; consumers page
+      forward through the event stream using a persisted cursor/position rather than
+      classic offset pagination.
+  pagination:
+    style: cursor
+    detail: Event consumers advance through the stream by persisting the last-seen
+      event position and requesting subsequent events from that point.
+  idempotency:
+    supported: false
+    detail: No idempotency-key mechanism is documented for this read/stream-oriented API.
+  error_envelope:
+    detail: Errors are returned as JSON with HTTP status codes; a machine-readable
+      RFC 9457 problem+json contract was not confirmed from the published docs.
+cross_links:
+  authentication: authentication/lookout-authentication.yml
+  rate_limits: rate-limits/lookout-rate-limits.yml
+  lifecycle: lifecycle/lookout-lifecycle.yml
