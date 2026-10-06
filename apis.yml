@@ -42,7 +42,7 @@ accessModel:
   method: derived
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-10-06'
 tags:
 - Company
 - Cybersecurity
@@ -77,6 +77,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- url: https://www.lookout.com/blog/rss.xml
+  type: BlogRSS
 - type: VulnerabilityDisclosure
   url: security/lookout-vulnerability-disclosure.yml
 - type: Security
