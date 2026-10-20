@@ -11,6 +11,8 @@ checked:
 - microsoft-sentinel/integrations/microsoft-sentinel-integration-edges.yml
 - okta/integrations/okta-integration-edges.yml
 - slack/integrations/slack-integration-edges.yml
+- jamf/integrations/jamf-integration-edges.yml
+- microsoft-intune/integrations/microsoft-intune-integration-edges.yml
 marketplace_apps: []
 edges:
 - partner_name: Microsoft Azure Marketplace
@@ -171,6 +173,39 @@ edges:
     detected: '2026-10-20'
   detected_by: sweep-compliance-assurance.py
   first_seen: '2026-10-20'
+- partner_name: JAMF (own)
+  partner: jamf
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://marketplace.jamf.com/details/lookout-mobile-threat-defense
+  mirror_of: jamf/integrations/jamf-integration-edges.yml
+  apps:
+  - Lookout Mobile Threat Defense
+  listing_count: 1
+  detected: '2026-10-20'
+  detected_by: mirror-platform-listings.py
+  category: Integration
+- partner_name: Microsoft Intune (partner connector docs)
+  partner: microsoft-intune
+  partner_match: mirror
+  mirror_match: domain
+  type: docs
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  evidence: https://learn.microsoft.com/en-us/intune/device-security/mobile-threat-defense/setup-lookout
+  mirror_of: microsoft-intune/integrations/microsoft-intune-integration-edges.yml
+  apps:
+  - Set up Lookout Mobile Endpoint Security integration with Intune
+  listing_count: 1
+  detected: '2026-10-20'
+  detected_by: mirror-platform-listings.py
+  category: Intune Mobile Threat Defense connector
 source:
 - crowdstrike/integrations/crowdstrike-integration-edges.yml
 - microsoft-sentinel/integrations/microsoft-sentinel-integration-edges.yml

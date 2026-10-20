@@ -135,3 +135,28 @@
     detected: '2026-10-20'
   status: not-a-workflow
   arazzo: null
+- slug: lookout-jamf-own
+  label: JAMF (own)
+  partner: jamf
+  partner_name: JAMF (own)
+  category: Integration
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.jamf.com/details/lookout-mobile-threat-defense
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: lookout-microsoft-intune-partner-connector-docs
+  label: Microsoft Intune (partner connector docs)
+  partner: microsoft-intune
+  partner_name: Microsoft Intune (partner connector docs)
+  category: Intune Mobile Threat Defense connector
+  type: docs
+  channel: partner-built
+  evidence: https://learn.microsoft.com/en-us/intune/device-security/mobile-threat-defense/setup-lookout
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
