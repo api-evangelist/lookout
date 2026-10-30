@@ -64,6 +64,100 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Lookout is a company surfaced as a portfolio company of a16z, accel, index-ventures and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Lookout is an endpoint-to-cloud cybersecurity company focused on mobile threat defense and data protection. Its Mobile Endpoint Security (MES) platform detects and responds to mobile-specific threats — phishing, smishing, malicious apps, network attacks, and device compromise — across enterprise and government fleets. Lookout exposes RESTful Mobile Intelligence APIs (the Mobile Risk API v2, SSO Config API, Connector API, and PCP Threat Feed) that stream threat events, device state, and vulnerability data into SIEM, SOAR, XDR, and MDM/EMM tooling using OAuth 2.0 client credentials authentication.
 
-Backed by: a16z, accel, index-ventures — http://www.lookout.com
+**Areas:** Company · Cybersecurity · Mobile Security · Endpoint Security · Threat Intelligence · Mobile Threat Defense · Data Protection · SIEM
+
+## Lookout on APIs.io
+
+Everything profiled for Lookout is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lookout/](https://apis.io/providers/lookout/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Lookout Mobile Risk API v2](https://apis.io/apis/lookout/lookout-mobile-risk-api-v2/) — RESTful HTTP interface for streaming and querying mobile threat, device, OS, application, and vulnerability data from a Lookout Mobile Endpoint Security…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Lookout Authentication](https://apis.io/security/lookout/lookout-authentication/)
+- [Lookout Domain Security](https://apis.io/security/lookout/lookout-domain-security/)
+- [Lookout Trust Center](https://apis.io/security/lookout/lookout-trust-center/)
+- [Lookout Vulnerability Disclosure](https://apis.io/security/lookout/lookout-vulnerability-disclosure/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Lookout Rate Limits](https://apis.io/rate-limits/lookout/lookout-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.lookout.com)
+- [Documentation](https://doc.lookout.com/en/mobile-endpoint-security/mes-apis)
+- [API reference](https://doc.lookout.com/en/mobile-endpoint-security/mes-apis/mobile-risk-api-v2/swagger-api-documentation)
+- [Support](https://esupport.lookout.com)
+- [Blog](https://www.lookout.com/blog)
+- [Security](https://www.lookout.com/legal/responsible-disclosure)
+- [Compliance](https://www.lookout.com/legal/compliance-corner)
+- [Terms of service](https://www.lookout.com/legal/terms)
+- [Privacy policy](https://www.lookout.com/legal/privacy-notice)
+
+## API Evangelist rating
+
+**Kin Score 30.4** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 31.6 |
+| Developer ergonomics | 32.1 |
+| Access clarity | 36.8 |
+
+**Agent readiness 5.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 35.3** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/lookout/](https://apis.io/providers/lookout/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Lookout: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/lookout/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
